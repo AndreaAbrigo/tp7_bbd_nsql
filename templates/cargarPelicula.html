@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+<title>Peliculas</title>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" media="screen" />
+</head>
+<body>
+    <ul style="list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: transparent;border-radius: 20px 20px 20px 20px;">
+        <li style="float: left;font-size: 20px;text-decoration: none;padding: 20px; width:8%;">
+            <a style="color: black;text-decoration: none;" href="/peliculas">Home</a>
+        </li>
+    </ul>
+    
+    <div style="font-size: 20px;display:block;margin:auto;border: black 2px solid;border-radius:20px;width: 400px;height: 150px;padding: 10px;">
+        <h3 style="text-align:center">Nueva Pelicula</h3>   
+        <form action="cargarPelicula" method="POST">
+            <p><input style="width: 95%;font-size: 16px;" type="text" name="title" placeholder="Nombre de la pelicula: "></p>
+            <p style="margin-top: 30px;"><input style="display:block;margin:auto;background-color: black;color: white;border-radius: 10px;font-size: 18px;" type="submit" value="Guardar"></p> 
+        </form>
+    </div>
+</body>
+</html>
